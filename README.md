@@ -1,4 +1,4 @@
-# [Név]
+# [Radeczki Krisztián]
 
 ## Hogyan kezdj neki?
 
