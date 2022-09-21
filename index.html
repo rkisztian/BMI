@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI kalkulátor</title>
+    <script src='main.js' defer></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    WORKING....
+    
+    <section id="fejlec">
+        <p>Írja be cm-ben a testmagasságát (cipő nélkül mérve) :
+            <input type="number" id="magassag" value="0"> cm</p> 
+        <p>Írja be kg-ban a számított testsúlyát (cipő nélkül mérve) :
+            <input type="number" id="suly" value="0" > kg</p>
+        
+        <button onclick="szamol()">Számítás</button>
+    </section>
+
+    <section>
+        <h2>AZ ÖN BMI ÉRTÉKE: <span id="eredmeny">0</span></h2>
+        <table>
+            <tr id="sovany">
+                <th>18,5 vagy kevesebb</th>
+                <td>SOVÁNY</td>
+            </tr>
+            
+            <tr id="normal">
+                <th>18,5 - 24,9</th>
+                <td>NORMÁL</td>
+            </tr>
+            <tr id="tulsuly">
+                <th>25 - 29,9</th>
+                <td>TÚLSÚLY</td>
+            </tr>
+            <tr id="elhizas1">
+                <th>30 - 34,9</th>
+                <td>I. FOKÚ ELHÍZÁS</td>
+            </tr>
+            <tr id="elhizas2">
+                <th>35 - 39,9</th>
+                <td>II. FOKÚ ELHÍZÁS</td>
+            </tr>
+            <tr id="elhizas3">
+                <th>40 vagy több</th>
+                <td>III. FOKÚ ELHÍZÁS</td>
+            </tr>
+        </table>
+    </section>
+
+
 </body>
 </html>
