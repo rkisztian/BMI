@@ -5,23 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI kalkulátor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src='main.js' defer></script>
     <link rel="stylesheet" href="main.css">
+    
 </head>
 <body>
     
     <section id="fejlec">
-        <p>Írja be cm-ben a testmagasságát (cipő nélkül mérve) :
-            <input type="number" id="magassag" value="0"> cm</p> 
-        <p>Írja be kg-ban a számított testsúlyát (cipő nélkül mérve) :
-            <input type="number" id="suly" value="0" > kg</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>Írja be cm-ben a számított testmagasságát (cipő nélkül mérve): </p> 
+                </div>
+                <div class="col-sm-4">
+                    <input type="number" id="magassag" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>Írja be kg-ban a számított testsúlyát (cipő nélkül mérve)</p>
+                </div>
+                <div class="col-sm-4">
+                    <input type="number" id="suly" value="0" >
+                </div>
+            </div>
+        </div>
         
-        <button onclick="szamol()">Számítás</button>
+        
+        
+    <button onclick="szamol()">Számítás</button>
     </section>
 
     <section>
         <h2>AZ ÖN BMI ÉRTÉKE: <span id="eredmeny">0</span></h2>
-        <table>
+        <table id="tabla1">
             <tr id="sovany">
                 <th>18,5 vagy kevesebb</th>
                 <td>SOVÁNY</td>
@@ -46,6 +66,16 @@
             <tr id="elhizas3">
                 <th>40 vagy több</th>
                 <td>III. FOKÚ ELHÍZÁS</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>AZ IDEÁLIS TESTTÖMEGE : <span>66.5 kg</span>></h2>
+        <table >
+            <tr>
+                <th id="testomeg">56.7 - 76.3 kg</th>
+                <td>kívánatos szélső értékek</td>
             </tr>
         </table>
     </section>

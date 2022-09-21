@@ -1,9 +1,46 @@
+html > body{
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    
+    max-width: 700px;
+}
+
+
 #fejlec{
     background-color: orange;
     color: white;
+    padding: 35px;
+    width: 700px;
+    text-align: justify;
+}
+
+button{
+    padding: 10px;
+    color: orange;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+
+#tabla1 td{
+    
+        padding: 15px;
+        
+    
+    
+}
+
+input{
+    width: 40%;
 }
 
 h2{
+    color: orange;
+}
+
+#testomeg{
     color: orange;
 }
 
